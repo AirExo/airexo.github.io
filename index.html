@@ -137,17 +137,17 @@
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="#airexo"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                      <i class="fa fa-robot"></i>
                   </span>
-                  <span>Video</span>
+                  <span>AirExo</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -176,22 +176,65 @@
     </div>
   </div>
 </section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hGnCfksRGHA?si=i7BCb2Lge99cf2Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3"><a id="abstract">Abstract</a></h2>
         <div class="content has-text-justified">
           <p>
-            While humans can use parts of their arms other than the hands for manipulations like gathering and supporting, whether robots can effectively learn and perform the same type of operations remains relatively unexplored. As these manipulations require joint-level control to regulate the complete poses of the robots, we develop <i>AirExo</i>, a low-cost, adaptable, and portable dual-arm exoskeleton, for teleoperation and demonstration collection. As collecting teleoperated data is expensive and time-consuming, we further leverage <i>AirExo</i> to collect cheap in-the-wild demonstrations at scale. Under our in-the-wild learning framework, we show that with only 3 minutes of the teleoperated demonstrations, augmented by diverse and extensive in-the-wild data collected by <i>AirExo</i>, robots can learn a policy that is comparable to or even better than one learned from teleoperated demonstrations lasting over 20 minutes. Experiments demonstrate that our approach enables the model to learn a more general and robust policy across the various stages of the task, enhancing the success rates in task completion even with the presence of disturbances.
+            While humans can use parts of their arms other than the hands for manipulations like gathering and supporting, whether robots can effectively learn and perform the same type of operations remains relatively unexplored. As these manipulations require joint-level control to regulate the complete poses of the robots, we develop <b><i>AirExo</i></b>, a low-cost, adaptable, and portable dual-arm exoskeleton, for teleoperation and demonstration collection. As collecting teleoperated data is expensive and time-consuming, we further leverage <b><i>AirExo</i></b> to collect cheap in-the-wild demonstrations at scale. Under our in-the-wild learning framework, we show that with only 3 minutes of the teleoperated demonstrations, augmented by diverse and extensive in-the-wild data collected by <b><i>AirExo</i></b>, robots can learn a policy that is comparable to or even better than one learned from teleoperated demonstrations lasting over 20 minutes. Experiments demonstrate that our approach enables the model to learn a more general and robust policy across the various stages of the task, enhancing the success rates in task completion even with the presence of disturbances.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3"><a id="airexo">AirExo</a></h2>
 
+        <div class="column has-text-centered">
+          <span class="link-block">
+            <a href=""
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fa fa-database"></i>
+              </span>
+              <span>Models</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href=""
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fa fa-file-pdf"></i>
+              </span>
+              <span>Installation Guide</span>
+            </a>
+          </span>
+        </div>
+        
+        <div class="content has-text-justified">
+          <p>
+            We introduce <b><i>AirExo</i></b>, an open-source, portable, adaptable, inexpensive, and robust exoskeleton system. The system is initially developed for Flexiv Rizon arms, but it can be quickly modified to different robotic arms, such as UR5, Franka and Kuka.
+          </p>
+          <p>
+            After calibration with a dual-arm robot, <b><i>AirExo</i></b> can achieve precise joint-level teleoperations of the robot. Moreover, contributed to its portable property, <b><i>AirExo</i></b> enables <i>in-the-wild data collection for dexterous manipulation without needing a robot</i>. Humans can wear <b><i>AirExo</i></b>, conduct manipulation in the wild, and collect demonstrations at scale. This breakthrough capability not only simplifies data collection but also extends the reach of wholearm manipulation into unstructured environments, where robots can learn and adapt from human interactions. The one-to-one mapping of joint configurations also reduces the barriers of transferring policies trained on human-collected
+            data to robots. 
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
