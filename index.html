@@ -281,8 +281,8 @@
         <h2 class="title is-3"><a id="experiments">Experimental Results</a></h2>
         <div class="content has-text-justified">
           <div class="column">
-            <video id="result-gather-balls" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/result-gatherballs.mp4"
+            <video id="result1" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/result1.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -290,71 +290,107 @@
             We evaluate the performance of different methods on  the "Gather Balls" task. After applying our in-the-wild learning framework, with the assistance of in-the-wild demonstrations, ACT can achieve the same level of performance as 50 teleoperated demonstrations with just 10 teleoperated demonstrations. This demonstrates that our learning framework with in-the-wild demonstrations makes the policy more sample-efficient for teleoperated demonstrations.
           </p>
           <p>
-            We also evaluate ...
+            <details>
+              <summary style="color:slateblue">&nbsp;<b>Links to  full videos in this experiment.</b></summary>
+              <br>
+            <table style="text-align:center">
+              <tr><td><b># Teleoperated Demonstrations</b></td> <td><b># In-the-Wild Demonstrations</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
+              <tr></tr>
+              <tr>
+                <td>50</td><td>-</td><td>VIP + NN</td> <td><a href="https://youtu.be/HTcxeEhi5p4">Link</a></td>
+              </tr>
+              <tr>
+                <td>50</td><td>-</td><td>VC-1 + NN</td> <td><a href="https://youtu.be/jDO4wiU-3ow">Link</a></td>
+              </tr>
+              <tr>
+                <td>50</td><td>-</td><td>MVP + NN</td> <td><a href="https://youtu.be/w3gp-_cFVrQ">Link</a></td>
+              </tr>
+              <tr>
+                <td>50</td><td>-</td><td>VINN</td> <td><a href="https://youtu.be/CVMD41ZGvMI">Link</a></td>
+              </tr>
+              <tr>
+                <td>50</td><td>-</td><td>ConvMLP</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>50</td><td>-</td><td>BeT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>50</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>10</td><td>-</td><td>VINN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>10</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>10</td><td>50</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>10</td><td>100</td><td>ACT</td> <td>Link</td>
+              </tr>
+              </table>
+            </details>
+          </p>
+          <div class="column">
+            <video id="result2" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/result2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <p>
+            We also evaluate the performance of different methods on the "Grasp from the Curtained Shelf" task. After training with our in-the-wild learning framework, ACT exhibits a significant improvement in success rates in the "grasp" and "throw" stages. It achieves even higher success rates, surpassing those obtained with the original set of 50 teleoperated demonstrations lasting more than 20 minutes, using only 10 such demonstrations lasting approximately 3 minutes.  This highlights that our proposed in-the-wild framework indeed enables the policy to learn a better strategy, effectively enhancing the success rates in the later stages of multi-stage tasks.
           </p>
           <p>
             <details>
-              <summary style="color:slateblue">&nbsp;<b>Links to Experiment Videos</b></summary>
+              <summary style="color:slateblue">&nbsp;<b>Links to  full videos in this experiment.</b></summary>
               <br>
             <table style="text-align:center">
-              <tr><td><b>Task</b></td><td><b># Teleop. Demo.</b></td> <td><b># In-the-Wild Demo.</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
+              <tr><td><b># Teleoperated Demonstrations</b></td> <td><b># In-the-Wild Demonstrations</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
               <tr></tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>VIP + NN</td> <td><a href="https://youtu.be/HTcxeEhi5p4">Link</a></td>
+                <td>50</td><td>-</td><td>VINN</td> <td>Link</td>
               </tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>VC-1 + NN</td> <td>Link</td>
+                <td>50</td><td>-</td><td>ACT</td> <td>Link</td>
               </tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>MVP + NN</td> <td>Link</td>
+                <td>10</td><td>-</td><td>VINN</td> <td>Link</td>
               </tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>VINN</td> <td>Link</td>
+                <td>10</td><td>-</td><td>ACT</td> <td>Link</td>
               </tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>ConvMLP</td> <td>Link</td>
+                <td>10</td><td>50</td><td>ACT</td> <td>Link</td>
               </tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>BeT</td> <td>Link</td>
+                <td>10</td><td>100</td><td>ACT</td> <td>Link</td>
+              </tr>
+              </table>
+            </details>
+            </p>
+            <div class="column">
+              <video id="result3" autoplay muted loop playsinline height="100%">
+                <source src="./static/videos/result3.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <p>
+              We then evaluate the policy performance when adding some disturbances in the experimental environment. The results demonstrate that our in-the-wild learning framework can leverage diverse in-the-wild demonstrations to make the learned policy more robust and generalizable to various environmental disturbances.
+            </p>
+
+          <p>
+            <details>
+              <summary style="color:slateblue">&nbsp;<b>Links to  full videos in this experiment.</b></summary>
+              <br>
+            <table style="text-align:center">
+              <tr><td><b># Teleoperated Demonstrations</b></td> <td><b># In-the-Wild Demonstrations</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
+              <tr></tr>  
+              <tr>
+                <td>10</td><td>-</td><td>ACT</td> <td>Link</td>
               </tr>
               <tr>
-                <td>Gather Balls</td><td>50</td><td>-</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Gather Balls</td><td>10</td><td>-</td><td>VINN</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Gather Balls</td><td>10</td><td>-</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Gather Balls</td><td>10</td><td>50</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Gather Balls</td><td>10</td><td>100</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf</td><td>50</td><td>-</td><td>VINN</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf</td><td>50</td><td>-</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf</td><td>10</td><td>-</td><td>VINN</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf</td><td>10</td><td>-</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf</td><td>10</td><td>50</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf</td><td>10</td><td>100</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf [Robustness Experiments]</td><td>10</td><td>-</td><td>ACT</td> <td>Link</td>
-              </tr>
-              <tr>
-                <td>Grasp from the Curtained Shelf [Robustness Experiments]</td><td>10</td><td>100</td><td>ACT</td> <td>Link</td>
+                <td>10</td><td>100</td><td>ACT</td> <td>Link</td>
               </tr>
               </table>
             </details>
