@@ -155,3 +155,31 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+th {
+  border-left: none;
+  border-right: none;
+}
+
+td {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+th:first-child, td:first-child {
+  border-left: 1px solid black;
+}
+
+th:last-child, td:last-child {
+  border-right: 1px solid black;
+}

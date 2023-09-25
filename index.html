@@ -239,7 +239,7 @@
         
         <div class="content has-text-justified">
           <p>
-            We introduce <b><i>AirExo</i></b>, an open-source, portable, adaptable, inexpensive, and robust exoskeleton system. The system is initially developed for <a href="https://www.flexiv.com/en/technology/robot">Flexiv Rizon arms</a>, but it can be quickly modified to different robotic arms, such as <a href="https://www.universal-robots.com/products/ur5-robot">UR5</a>, <a href="https://www.franka.de/research">Franka</a> and <a href="https://www.kuka.com/en-de/products/robot-systems/industrial-robots/lbr-iiwa">Kuka</a>.
+            We introduce <b><i>AirExo</i></b>, an open-source, portable, adaptable, inexpensive, and robust exoskeleton system. The system is initially developed for <a href="https://www.flexiv.com/en/technology/robot">Flexiv Rizon arms</a>, and it can be quickly modified for different robotic arms, such as <a href="https://www.universal-robots.com/products/ur5-robot">UR5</a>, <a href="https://www.franka.de/research">Franka</a> and <a href="https://www.kuka.com/en-de/products/robot-systems/industrial-robots/lbr-iiwa">Kuka</a>.
           </p>
           <div class="column">
           <video id="airexo" autoplay muted loop playsinline height="100%">
@@ -278,11 +278,86 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"><a id="experiments">Experiments</a></h2>
+        <h2 class="title is-3"><a id="experiments">Experimental Results</a></h2>
         <div class="content has-text-justified">
+          <div class="column">
+            <video id="result-gather-balls" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/result-gatherballs.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
           <p>
-
-            
+            We evaluate ...
+          </p>
+          <p>
+            We also evaluate ...
+          </p>
+          <p>
+            <details>
+              <summary style="color:slateblue">&nbsp;<b>Links to Experiment Videos</b></summary>
+              <br>
+            <table style="text-align:center">
+              <tr><td><b>Task</b></td><td><b># Teleop. Demo.</b></td> <td><b># In-the-Wild Demo.</b></td><td><b>Method</b></td> <td><b>Video</b></td></tr>
+              <tr></tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>VIP + NN</td> <td><a href="https://youtu.be/HTcxeEhi5p4">Link</a></td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>VC-1 + NN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>MVP + NN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>VINN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>ConvMLP</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>BeT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>50</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>10</td><td>-</td><td>VINN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>10</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>10</td><td>50</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Gather Balls</td><td>10</td><td>100</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf</td><td>50</td><td>-</td><td>VINN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf</td><td>50</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf</td><td>10</td><td>-</td><td>VINN</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf</td><td>10</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf</td><td>10</td><td>50</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf</td><td>10</td><td>100</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf [Robustness Experiments]</td><td>10</td><td>-</td><td>ACT</td> <td>Link</td>
+              </tr>
+              <tr>
+                <td>Grasp from the Curtained Shelf [Robustness Experiments]</td><td>10</td><td>100</td><td>ACT</td> <td>Link</td>
+              </tr>
+              </table>
+            </details>
           </p>
         </div>
       </div>
